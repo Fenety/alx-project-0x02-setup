@@ -1,6 +1,6 @@
 import Header from '../components/layout/Header';
 import Head from 'next/head';
-import Card from '../components/common/Card';
+import Card from '@/components/common/Card';
 
 const Home : React.FC = () =>  {
     return (
