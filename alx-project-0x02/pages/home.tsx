@@ -1,5 +1,6 @@
 import Header from '../components/layout/Header';
 import Head from 'next/head';
+import Card from '../components/common/Card';
 
 const Home : React.FC = () =>  {
     return (
@@ -11,9 +12,14 @@ const Home : React.FC = () =>  {
             <Header />
             <main className="container mx-auto p-4">
                 <h1 className="text-3xl font-bold mb-4"> Welcome to My Project</h1>
-                <p className="text-lg">
-                    This is the home page of my project where I try to solidify my front-end skills.
-                </p>
+                <Card
+                   title = "First Card"
+                   content= "This is the content of the first Card"
+                />
+                <Card 
+                   title = "Second Card"
+                   content = "This is the content of the Second Card"
+                />
             </main>
         </>
     );
