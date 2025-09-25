@@ -1,4 +1,4 @@
-import {ButtonProps } from '@/interfaces';
+import { ButtonProps } from '@/interfaces';
 import React from 'react';
 
 const Button: React.FC<ButtonProps> = ({label, size, shape, onClick}) => {
@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({label, size, shape, onClick}) => {
 
     return (
     <button 
-        className = {"bg-green-500 hover:bg-blue-700 text-black font-bold  ${paddingClass} ${fontSizeClass} ${shape}"}
+        className={`bg-blue-500 hover:bg-blue-700 text-white font-bold ${paddingClass} ${fontSizeClass} ${shape}`}
         onClick={onClick}
     >
         {label}
